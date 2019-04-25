@@ -121,3 +121,64 @@ var ourDog = {
   myDog.name = "Happy Coder";
   
   console.log(myDog.name);
+
+  ///*********** Basic JavaScript: Using Objects for Lookups
+
+
+
+  // Setup
+function phoneticLookup(val) {
+    var result = "";
+  
+    // Only change code below this line
+  var lookup = {
+      "alpha": "Adams",
+      "bravo": "Boston",
+      "charlie": "Chicago", 
+      "delta": "Denver",
+      "echo": "Easy",
+       "foxtrot": "Frank",
+    };
+  
+    result = lookup[val];
+  
+    // Only change code above this line
+    return result;
+  }
+  
+  // Change this value to test
+  console.log(phoneticLookup("foxtrot"));
+
+  //********* */Basic JavaScript: Manipulating Complex Objects
+
+
+  var myMusic = [
+    {
+      "artist": "Billy Joel",
+      "title": "Piano Man",
+      "release_year": 1973,
+      "formats": [ 
+        "CD",
+        "8T",
+        "LP"
+      ],
+      "gold": true
+    },
+  
+      {
+      "artist": "Elton John",
+      "title": "I'm Still Standing",
+      "release_year": 1983,
+      "formats": [ 
+        "CD",
+        "8T",
+        "LP"
+      ],
+      "gold": true
+    }
+    // Add record here
+  ];
+  
+  console.log(myMusic[1]["artist"]);
+
+  ////
