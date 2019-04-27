@@ -38,7 +38,7 @@ var contact = contacts[index];
   console.log(contact.firstName)
 if(contact.firstName === name){
   if(contact.hasOwnProperty(prop)){
-      return contact[props];
+      return contact[prop];
   }else{
     return "No";
   }
